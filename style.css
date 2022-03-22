@@ -1,0 +1,39 @@
+@media screen and (max-width: 350px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+.imgTitle {
+    background-image: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+/***************************************** HEADER *******************************************/
+header {
+    background: url(/ressources/bitcoin-reflection-price-volume-wo.jpg);
+    background-size: cover;
+    height: 100vh;
+    /* margin-bottom: 40px; */
+}
+h1 {
+    color: aliceblue;
+    font-size: 5em;
+    padding: 0px 0 0 20%;
+    text-shadow: -3px 3px 2px green;
+    animation: titre ease 3s;
+}
+.title {
+    animation: title ease 5s;
+}
+/* Animation du titre */
+@keyframes titre {
+    0% {
+        opacity: 0;
+        transform: translatey(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
