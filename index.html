@@ -21,7 +21,7 @@
     <body>
         <header>
             <!-- Nav bar Bootstrap -->
-            <nav class="container">
+            <nav class="container-fluid">
                 <div class="row">
                     <div class="col-12">
                         <nav
@@ -80,7 +80,40 @@
                 </p>
             </h1>
         </header>
-        <!-- container principal -->
+        <!-- container principal ****************************-->
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8">
+                    <h2>Foire aux questions</h2>
+                    <p>
+                        <a href="#">Le Bitcoin c'est quoi ?</a>
+                    </p>
+                    <p>
+                        <a href="#">A quoi ça sert ?</a>
+                    </p>
+                    <p>
+                        <a href="#">Pourquoi en acheter ?</a>
+                    </p>
+                    <p>
+                        <a href="#">Où en acheter</a>
+                    </p>
+                </div>
+
+                <div class="col-4">
+                    <img
+                        class="imgQuestion"
+                        src="images/portrait-homme-afro-americain-stresse-desespere_1262-12408.webp"
+                        alt="Homme totalement perdu :)"
+                    />
+                </div>
+                <p class="titreQuestion">
+                    Toutes ces questions ont va essayer d'y répondre ensemble
+                    ici
+                </p>
+            </div>
+        </div>
+        <!-- Left part ********************************** -->
+
         <main class="container-fluid main">
             <div class="row">
                 <h2>
@@ -88,8 +121,8 @@
                     investirs!
                 </h2>
                 <div class="col-lg-9" id="leftPart">
-                    <div class="container">
-                        <article class="row elements">
+                    <div class="container-fluid">
+                        <article class="row elements elements-c">
                             <div class="img-portrait col-sm-4">
                                 <img
                                     alt="bitcoin"
@@ -117,7 +150,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="row elements">
+                        <article class="row elements elements-c">
                             <div class="img-portrait col-sm-4">
                                 <img
                                     src="images/istockphoto-904735154-612x612.jpg"
@@ -142,7 +175,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="row elements">
+                        <article class="row elements elements-c">
                             <div class="img-portrait col-sm-4">
                                 <img
                                     src="images/Crypto-monnaie-Ripple-XRP.png"
@@ -168,6 +201,7 @@
                         </article>
                     </div>
                 </div>
+                <!--  Right part *************************************** -->
                 <div class="col-lg-3" id="rightPart">
                     <h2>Nos astuces de suivi</h2>
                     <a href="https://fr.tradingview.com/">
@@ -182,7 +216,7 @@
                         </div>
                     </a>
                     <p>
-                        Tading View est un site de suivi de cours de marché.
+                        Trading View est un site de suivi de cours de marché.
                         C'est d'ailleurs par ici que l'on peut visualiser les
                         graphiques des cours d'à peu près tout ce qui se vend,
                         que ce soit à la bourse, les actions, CAC40 ,
@@ -225,44 +259,86 @@
                         une entreprise de plusieurs millions de valeurs.
                     </p>
                 </div>
-                <div class="newsletter">
-                    <p>
-                        Veuillez rentrer votre adresse mail pour recevoir notre
-                        newsletter
-                    </p>
-                    <form class="row g-3 d-flex justify-content-center">
-                        <div class="col-auto">
-                            <label for="staticEmail2" class="visually-hidden"
-                                >Email</label
-                            >
-                            <input
-                                type="text"
-                                readonly
-                                class="form-control-plaintext"
-                                id="staticEmail2"
-                                value="email@example.com"
-                            />
-                        </div>
-                        <div class="col-auto">
-                            <label for="inputPassword2" class="visually-hidden"
-                                >Exemple@email.com</label
-                            >
-                            <input
-                                type="password"
-                                class="form-control"
-                                id="inputPassword2"
-                                placeholder="Password"
-                            />
-                        </div>
-                        <div class="col-auto">
-                            <button type="submit" class="btn btn-primary mb-3">
-                                S'inscrire
-                            </button>
-                        </div>
-                    </form>
-                </div>
             </div>
         </main>
+        <!-- Newletter *************************************** -->
+        <div class="newsletter">
+            <h6>
+                Veuillez renseigner votre adresse mail pour recevoir notre
+                newsletter
+            </h6>
+            <form class="row g-3 d-flex justify-content-center">
+                <div class="col-auto">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="email@mail.com"
+                        name="email"
+                        required
+                    />
+                </div>
+
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                        S'inscrire
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row d-flex elements justify-content-center">
+                    <div class="col">
+                        <p class="pfooter">Tous droits réservés</p>
+                        <p class="pfooter">Copyright 2022</p>
+                    </div>
+                    <div
+                        class="list-img-footer d-flex justify-content-center col"
+                    >
+                        <ul>
+                            <li>
+                                <a href="www.google.com">
+                                    <img
+                                        class="img-footer"
+                                        src="images/facebook.jfif"
+                                        alt="Facebook"
+                                    />Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="www.google.com">
+                                    <img
+                                        class="img-footer"
+                                        src="images/twitter.jfif"
+                                        alt="Twitter"
+                                    />Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="www.google.com">
+                                    <img
+                                        class="img-footer"
+                                        src="images/1491580658-yumminkysocialmedia06_83104.png"
+                                        alt="Instagram"
+                                    />Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="www.google.com">
+                                    <img
+                                        class="img-footer"
+                                        src="images/Appele-multicolor.png"
+                                        alt="Apple"
+                                    />Apple
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
