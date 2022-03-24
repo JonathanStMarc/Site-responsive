@@ -1,6 +1,4 @@
-body {
-    background-color: rgba(56, 73, 168, 0.631) !important;
-} /* Media query *******************************************/
+/* Media query *******************************************/
 @media screen and (max-width: 570px) {
     .navbar-brand {
         display: none;
@@ -22,20 +20,15 @@ body {
         align-content: center;
     }
 }
-main {
-    width: 80%;
-}
-
-#leftPart {
-    height: 100%;
-}
-
 h2,
 h3,
 h4,
 nav-item,
 footer {
     text-align: center;
+}
+body {
+    background-color: #273e8cc0 !important;
 }
 
 /* HEADER *******************************************/
@@ -59,7 +52,17 @@ h1 {
 .title {
     animation: title ease 5s;
 }
-
+/* Animation du titre *****************************************/
+@keyframes titre {
+    0% {
+        opacity: 0;
+        transform: translatey(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
 /* Main *********************************/
 a:link,
 p > a {
@@ -85,7 +88,7 @@ button .btn {
 }
 .titreQuestion {
     font-weight: bold;
-    color: #e424cd7c;
+    color: #6107567c;
     text-align: center;
 }
 .imgQuestion {
@@ -130,14 +133,12 @@ ul {
 li {
     margin: 0.2rem;
 }
-/* Animation du titre *****************************************/
-@keyframes titre {
-    0% {
-        opacity: 0;
-        transform: translatey(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translatey(0px);
-    }
+/* IndexBis ********************************************** */
+.h2-indexBis {
+    background-color: #56bbf180;
+    border-radius: 8px 8px;
+}
+.h4-indexBis {
+    background-color: #5ee6eb93;
+    border-radius: 8px 8px;
 }
