@@ -3,10 +3,6 @@
     .navbar-brand {
         display: none;
     }
-    ul {
-        list-style-type: none;
-    }
-
     .text-element {
         width: 100%;
         text-overflow: ellipsis;
@@ -20,6 +16,7 @@
         align-content: center;
     }
 }
+
 h2,
 h3,
 h4,
@@ -69,7 +66,7 @@ p > a {
     text-decoration: none;
     color: antiquewhite;
 }
-img {
+img:not(.graphLog) {
     width: 10rem;
     height: 10rem;
     border-radius: 50% 50%;
@@ -90,10 +87,14 @@ button .btn {
     font-weight: bold;
     color: #6107567c;
     text-align: center;
+    text-decoration: underline;
 }
 .imgQuestion {
     width: 6rem;
     height: 6rem;
+}
+p {
+    color: white;
 }
 
 /* Newsletter ***************************/
@@ -135,10 +136,31 @@ li {
 }
 /* IndexBis ********************************************** */
 .h2-indexBis {
-    background-color: #56bbf180;
+    background-color: #5ee6eb93;
     border-radius: 8px 8px;
 }
 .h4-indexBis {
-    background-color: #5ee6eb93;
+    background-color: #56bbf180;
     border-radius: 8px 8px;
+}
+/* Scroll *********************************************** */
+#scrollUp {
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    opacity: 0.5;
+}
+.graphLog {
+    border-radius: none;
+}
+.graphLog {
+    width: 25rem;
+    height: 20rem;
+    margin: 1rem;
+}
+@media screen and (max-width: 480px) {
+    .graphLog {
+        width: 18rem;
+        height: 12rem;
+    }
 }
